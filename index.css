@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attribution {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Navbar CSS */
+nav {
+    display: flex;
+    width: 85%;
+    height: 15%;
+    border-bottom: 1px solid hsl(0, 0%, 0%, 0.08);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+    width: 2%;
+}
+
+#container1 {
+    display: flex;
+    height: 100%;
+    width: 65%;
+}
+
+#container1 div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#container1 div ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#close {
+    display: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+#container1 div ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 2rem;
+    height: 100%;
+}
+
+#container1 div ul li a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+}
+
+#container1 div ul li a:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 0%);
+}
+
+#container2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+}
+
+#container2 svg {
+    width: 10%;
+    height: 50%;
+}
+
+#container2 svg:hover path {
+    fill: hsl(0, 0%, 0%);
+}
+
+#container2 img {
+    width: 20%;
+    height: 50%;
+    border-radius: 50px;
+    margin-left: 20%;
+    box-sizing: border-box;
+}
+
+#nProducts {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    width: 19px;
+    height: 13px;
+    position: absolute;
+    margin-right: 6.5vw;
+    margin-top: -2.5vh;
+}
+
+#container2 img:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+/* Section CSS */
+.section {
+    display: flex;
+    margin-top: 5%;
+    width: 75%;
+    height: 75%;
+}
+
+.leftContainer {
+    width: 35%;
+    height: 100%;
+    margin-right: 10%;
+}
+
+#imgBtn {
+    display: flex;
+    width: 100%;
+    height: 75%;
+}
+
+#mainImg {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+.thumbnail img {
+    width: 22%;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.thumbnail img:hover {
+    filter: opacity(50%);
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.detailsCont {
+    width: 100%;
+    height: 55%;
+}
+
+.detailsCont h4 {
+    color: hsl(26, 100%, 55%);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.detailsCont h1 {
+    color: hsl(220, 13%, 13%);
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.detailsCont p {
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: hsl(219, 9%, 45%);
+}
+
+.cost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+}
+
+.sale {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: flex-start;
+}
+
+#price {
+    font-size: 1.5vw;
+    margin-right: 5%;
+}
+
+#offer {
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    width: 8%;
+}
+
+.rightContainer s {
+    color: hsl(220, 14%, 75%);
+    font-size: 1.5vw;
+}
+
+.buyCont {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.quantityCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 70%;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10px;
+}
+
+.quantityCont h5 {
+    font-size: 1.7vw;
+}
+
+.quantityBtn {
+    display: flex;
+    justify-content: center;
+    width: 13%;
+    cursor: pointer;
+}
+
+.quantityBtn:hover {
+    filter: opacity(50%);
+}
+
+#cartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 55%;
+    height: 70%;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 1.3vw;
+}
+
+#cartBtn svg {
+    margin-right: 15px;
+}
+
+#cartBtn:hover {
+    filter: opacity(50%);
+}
+
+/* Cart modal box CSS */
+#cartModal {
+    position: absolute;
+    top: 5vw;
+    margin-left: 60%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 30%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 0 15px 12px 0 hsl(219, 9%, 45%, 0.5);
+    box-sizing: border-box;
+}
+
+#cartModal h4 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    height: 25%;
+    width: 100%;
+    padding-left: 15px;
+    color: hsl(220, 13%, 13%);
+}
+
+#productDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 40%;
+}
+
+#products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 70%;
+}
+
+#empty {
+    color: hsl(219, 9%, 45%);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+#products img {
+    width: 22%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#details {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#title {
+    height: 50%;
+    font-size: 1vw;
+    color: hsl(219, 9%, 45%);
+}
+
+#total {
+    height: 50%;
+    display: flex;
+    font-size: 1.2vw;
+    gap: 20px;
+}
+
+#total b {
+    color: hsl(220, 13%, 13%);
+}
+
+#delete {
+    display: none;
+    cursor: pointer;
+}
+
+#delete svg path {
+    color: hsl(220, 14%, 75%);
+}
+
+#checkBtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+}
+
+#checkBtn:hover {
+    filter: opacity(50%);
+}
+
+/* Product modal box CSS */
+#lightBox {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    background-color: hsl(0, 0%, 0%, 0.75);
+}
+
+#lightBox #closeBtn {
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#lightBox #closeBtn:hover path {
+    fill: hsl(26, 100%, 55%);
+}
+
+#lightBox .lightImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 60%;
+
+}
+
+#lightBox .lightImg #lightBoxImg {
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+#lightBox .changeBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: -20px;
+    margin-left: -20px;
+    z-index: 1;
+}
+
+#lightBox .changeBtn:hover path {
+    stroke: hsl(26, 100%, 55%);
+}
+
+#lightBox .thumbnail {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 10%;
+    margin-top: 15px;
+}
+
+@media(max-width:375px) {
+    nav {
+        border-bottom: none;
+        position: relative;
+        width: 100%;
+        height: 10%;
+    }
+
+    #logo {
+        width: 30%;
+    }
+
+    #menu {
+        display: flex;
+        width: 10%;
+    }
+
+    #container1 {
+        background-color: hsl(0, 0%, 0%, 0.75);
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: -30px;
+        width: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #container1 div {
+        background-color: hsl(0, 0%, 100%);
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 15%;
+        width: 70%;
+        height: 100%;
+    }
+
+    #container1 div ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        margin-left: 10%;
+    }
+
+    #container1 div ul li a {
+        color: hsl(220, 13%, 13%);
+        font-size: 8vw;
+        font-weight: bold;
+    }
+
+    #close {
+        display: flex;
+        height: 15%;
+        width: 10%;
+        margin-left: 10%;
+    }
+
+    #container2 {
+        width: 40%;
+    }
+
+    #container2 svg {
+        width: 15%;
+    }
+
+    #nProducts {
+        margin-right: 13vw;
+        margin-top: -2vh;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 85%;
+        margin-top: 0;
+    }
+
+    .leftContainer {
+        width: 100%;
+        height: 40%;
+        margin-right: 0;
+    }
+
+    #imgBtn {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #mainImg {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    .thumbnail {
+        display: none;
+    }
+
+    .rightContainer {
+        width: 95%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .detailsCont {
+        width: 100%;
+        height: 55%;
+    }
+
+    .detailsCont h4 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 4vw;
+    }
+
+    .detailsCont h1 {
+        font-size: 8vw;
+        margin-bottom: 10px;
+    }
+
+    .detailsCont p {
+        font-size: 4vw;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    .cost {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+    }
+
+    .sale {
+        display: flex;
+        height: 15%;
+        align-items: center;
+    }
+
+    #price {
+        font-size: 6vw;
+    }
+
+    #offer {
+        font-size: 5vw;
+        border-radius: 6px;
+        width: 15%;
+    }
+
+    .rightContainer s {
+        display: flex;
+        align-items: center;
+        font-size: 5vw;
+        height: 10%;
+    }
+
+    .buyCont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
+
+    .quantityCont {
+        width: 100%;
+        height: 45%;
+    }
+
+    .quantityCont h5 {
+        font-size: 6vw;
+    }
+
+    .quantityBtn {
+        width: 20%;
+    }
+
+    #cartBtn {
+        width: 100%;
+        height: 45%;
+        font-size: 5vw;
+    }
+
+    #cartModal {
+        top: 11%;
+        margin-left: 0;
+        width: 95%;
+        height: 30%;
+    }
+
+    #cartModal h4 {
+        font-size: 6vw;
+        font-weight: bold;
+    }
+
+    #empty {
+        font-size: 5vw;
+    }
+
+    #details {
+        display: flex;
+        width: 70%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #title {
+        width: 100%;
+        font-size: 5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #total {
+        font-size: 5vw;
+    }
+
+    #delete svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #checkBtn {
+        font-size: 5vw;
+    }
+
+    .attribution {
+        height: 5%;
+        font-size: 3vw;
+    }
+
+}
