@@ -37,39 +37,31 @@ let i;
 function mainLightImg(){
     if(document.body.offsetWidth >= "375") {
         document.getElementById("lightBoxImg").src = document.getElementById("mainImg").src;
-        // console.log(document.getElementById("lightBoxImg").src)
-        if(document.getElementById("lightBoxImg").src=="http://127.0.0.1:5501/ecommerce-product-page-main/images/image-product-1.jpg"){
+        if(document.getElementById("lightBoxImg").src=="https://impc9.github.io/Ecommerce-product-page-main/images/image-product-1.jpg"){
             imageNo = 4
             i = 1
-            console.log("1")
         }
-        else if(document.getElementById("lightBoxImg").src=="http://127.0.0.1:5501/ecommerce-product-page-main/images/image-product-2.jpg"){
+        else if(document.getElementById("lightBoxImg").src=="https://impc9.github.io/Ecommerce-product-page-main/images/image-product-2.jpg"){
             imageNo = 1
             i = 2
-            console.log("2")
         }
-        else if(document.getElementById("lightBoxImg").src=="http://127.0.0.1:5501/ecommerce-product-page-main/images/image-product-3.jpg"){
+        else if(document.getElementById("lightBoxImg").src=="https://impc9.github.io/Ecommerce-product-page-main/images/image-product-3.jpg"){
             imageNo = 2
             i = 3
-            console.log("3")
         }
-        else if(document.getElementById("lightBoxImg").src=="http://127.0.0.1:5501/ecommerce-product-page-main/images/image-product-4.jpg"){
+        else if(document.getElementById("lightBoxImg").src=="https://impc9.github.io/Ecommerce-product-page-main/images/image-product-4.jpg"){
             imageNo = 3
             i = 4
-            console.log("4")
         }
         document.getElementById(`thumb${i}`).style.border = "2px solid hsl(26, 100%, 55%)"
         document.getElementById(`thumb${i}`).style.filter = "opacity(50%)"
         if(k!=0){
-            // console.log("hi")
             document.getElementById(`thumb${k}`).style.border = "none"
             document.getElementById(`thumb${k}`).style.filter = "opacity(100%)"
         }
         k = i;
     }
-    console.log(i)
 }
-// console.log(imageNo)
 
 // Onclick function to change main image of light box when clicked on thumbnail
 function changeLightImg(a, i) {
@@ -93,7 +85,6 @@ let imageSources  =  [
 // Change image on click on next or previous button
 function changeLightImgBtn(index){
     imageNo = (imageNo + index)%4;
-    // console.log(imageNo);
     document.getElementById("lightBoxImg").src = imageSources[imageNo];
     document.getElementById(`thumb${imageNo+1}`).style.border = "2px solid hsl(26, 100%, 55%)"
     document.getElementById(`thumb${imageNo+1}`).style.filter = "opacity(50%)"
@@ -154,8 +145,6 @@ let addToCart = document.getElementById("cartBtn");
 addToCart.addEventListener("click", ()=>{
     if(quantity.innerText==0){
         alert("Please choose proper quantity")
-        // confirm("Please choose proper quantity")
-        // console.log("Please choose proper quantity")
     }
     else{
         document.getElementById("products").innerHTML = `
