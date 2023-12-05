@@ -1,9 +1,7 @@
 // Click main image to show light box 
 let imgBtn = document.getElementById("imgBtn");
 imgBtn.addEventListener("click", (a)=>{
-    console.log(document.body.offsetWidth)
     if(document.body.offsetWidth >= "375") {
-        console.log("entered")
         document.getElementById("lightBox").style.display = "flex";
         document.getElementById("closeBtn").addEventListener("click", ()=>{
             document.getElementById("lightBox").style.display = "none";
